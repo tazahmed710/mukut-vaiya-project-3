@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.I</title>
+</head>
+
+<body style="background-image: linear-gradient(#6089d6, #fff);background-repeat: no-repeat;">
+    <br>
+    <h2 style="text-align: center;">Skriv med selvtillid</h2>
+    <br>
+    <h4 style="text-align: center;">Indsmt din .tninq, robotten rotte stave- qrammatikfejL</h4>
+    <br>
+    <h6 style="text-align: center;">Indsmt din .tninq, robotten rotte stave- qrammatikfejL</h6>
+    <div id="container">
+        <div class="form-box">
+            <form class="c-form" name="c-form" action="#" method="post">
+                <div class="two-columns">
+
+                    <select id="myDropdown">
+                        <option>Type of Content:</option>
+                        <option value="option1">Emails</option>
+                        <option value="option2">Blog Posts/Articles</option>
+                        <option value="option3">Social Media </option>
+                        <option value="option3">Job Applications</option>
+                        <option value="option3">Reports and Documentation</option>
+                        <option value="option3">Personal Correspondence</option>
+                    </select>
+
+                    <select id="myDropdown">
+                        <option value="option1">Style of Writing:</option>
+                        <option value="option1">Formal</option>
+                        <option value="option1">Informal</option>
+                        <option value="option1">Professional</option>
+                        <option value="option1">Technical</option>
+                        <option value="option1">Academic</option>
+                        <option value="option1">Creative</option>
+                        <option value="option1">Conversational</option>
+                    </select>
+                </div>
+                <br><br>
+
+                <div class="two-columns">
+                    <select id="myDropdown">
+                        <option>Target Audience:</option>
+                        <option value="option1">Personal Contacts</option>
+                        <option value="option1">Professional Contacts</option>
+                        <option value="option1">Public/General Audience</option>
+                        <option value="option1">Specialist Audience</option>
+                        <option value="option1">Youth Audien</option>
+                        <option value="option1">Senior Audience</option>
+                    </select>
+                    <select id="myDropdown">
+                        <option>Purpose of Content:</option>
+                        <option value="option1">Informative</option>
+                        <option value="option1">Persuasive</option>
+                        <option value="option1">Instructional</option>
+                        <option value="option1">Entertainment</option>
+                        <option value="option1">Call to Actio</option>
+                    </select>
+                </div>
+                <br><br>
+                <select id="myDropdown">
+                    <option>Length</option>
+                    <option value="option1">Informative</option>
+                    <option value="option1">Persuasive</option>
+                    <option value="option1">Instructional</option>
+                    <option value="option1">Entertainment</option>
+                    <option value="option1">Call to Actio</option>
+                </select>
+
+
+
+                <fieldset>
+                    <label class="c-form-label" for="comments">Dynamic explanation (comes depending on what type of
+                        content the user chooses)
+                    </label>
+                    <textarea id="input1" class="c-form-input" name="your-comments" placeholder="Input field"
+                        required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <label class="c-form-label" for="comments">Second input field ( - only come if user choose "job
+                        aplication" under "type of content")<br>
+                        Explanation
+                    </label>
+                    <textarea id="input2" class="c-form-input" name="your-comments" placeholder="Input field"
+                        required></textarea>
+                </fieldset>
+
+
+
+
+                <button class="c-form-btn" type="submit">SUBMIT</button>
+                <fieldset>
+                    <label class="c-form-label" for="comments">Output field</label>
+                    <textarea id="input2" class="c-form-input" name="your-comments" placeholder="Text"
+                        required></textarea>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: futura-pt, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 600px;
+            padding: 20px;
+        }
+
+        .form-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px 15px;
+            border-radius: 4px;
+        }
+
+        .c-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .c-form-label {
+            display: inline-block;
+            margin: .5rem 0;
+            color: #3d3935;
+            letter-spacing: .2px;
+            font-size: 1rem;
+        }
+
+        .c-form-input {
+            width: 100%;
+            padding: 15px 10px;
+            border: 1px solid #3d3935;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #3d3935;
+            outline: 0;
+        }
+
+        .c-form-input::placeholder {
+            color: #867d6c;
+            font-size: 1rem;
+        }
+
+        .c-form-required {
+            color: #b0092d;
+        }
+
+        textarea.c-form-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            resize: none;
+        }
+
+        .two-columns {
+            display: flex;
+            grid-template-columns: 100%;
+        }
+
+        fieldset {
+            margin: .4rem 0;
+            padding: 0;
+            border: none;
+        }
+
+        .c-form-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3d3935;
+            color: #fff;
+            font-size: 1.125rem;
+            letter-spacing: 2px;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 481px) {
+            .two-columns {
+                grid-template-columns: 48.7804878% 48.7804878%;
+                grid-column-gap: 2.43902439%;
+            }
+        }
+
+        #myForm {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #myDropdown {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+
+        @media (max-width: 600px) {
+            #myDropdown {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+
+</html>
